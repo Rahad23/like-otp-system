@@ -60,7 +60,7 @@ document.getElementById('calculetor').addEventListener('click', function(evant){
 
 document.getElementById('clear').addEventListener('click', function(){
     const confirmPinClear = document.getElementById('confirmPin');
-    confirmPinClear.value = "";  
+    confirmPinClear.value = "";
 });
 
 document.getElementById('clear-last').addEventListener('click', function(){
@@ -81,5 +81,6 @@ document.getElementById('clear-last').addEventListener('click', function(){
 document.getElementById('submit-chack').addEventListener('click', function(){
 
     compareInputValue('genaratgeInput', 'confirmPin');
-
+    const emptys = document.getElementById('confirmPin');
+    emptys.value = "";
 });
